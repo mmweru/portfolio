@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Maryann Wambui | Data Analyst, Data Engineer, BI Developer</title>
+<meta name="description" content="Maryann Wambui — Computer Science graduate. Data engineering, analytics and software. Python, SQL, Azure, Snowflake, Power BI."/>
+<meta property="og:title" content="Maryann Wambui | Data &amp; Software Portfolio"/>
+<meta property="og:description" content="I turn messy data into things people actually use."/>
+<meta property="og:type" content="website"/>
+<meta name="theme-color" content="#120a2b"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23080c14'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%2300f0ff' font-family='monospace'%3E%3E_%3C/text%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300..600,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  // Apply saved theme before first paint to avoid a flash.
+  try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="stylesheet" href="/src/style.css"/>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<div class="bg-ambient" aria-hidden="true"></div>
+<div class="bg-spot" aria-hidden="true"></div>
+
+<!-- ============================ NAV ============================ -->
+<header class="sticky top-0 z-50 backdrop-blur-xl" style="background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom: 1px solid var(--line);">
+  <div class="wrap h-[72px] flex items-center justify-between gap-4">
+    <a href="#top" class="mono font-semibold text-lg flex items-center gap-1" aria-label="Maryann Wambui, home">
+      <span style="color:var(--accent)">&gt;_</span><span>maryann</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-9" aria-label="Primary">
+      <a class="nav-link" data-nav-link href="#work">Work</a>
+      <a class="nav-link" data-nav-link href="#skills">Skills</a>
+      <a class="nav-link" data-nav-link href="#resume">Resume</a>
+      <a class="nav-link" data-nav-link href="#terminal">Terminal</a>
+      <a class="nav-link" data-nav-link href="#contact">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2 sm:gap-3">
+      <button id="themeToggle" type="button" class="icon-btn" aria-label="Switch to light theme" style="width:42px;height:42px">
+        <span class="material-symbols-outlined" id="themeIcon" style="font-size:20px">light_mode</span>
+      </button>
+      <a href="#contact" class="btn btn-primary hidden sm:inline-flex" style="padding:.65rem 1.2rem">Hire me</a>
+      <button id="menuBtn" type="button" class="icon-btn md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav" style="width:42px;height:42px">
+        <span class="material-symbols-outlined" id="menuIcon" style="font-size:22px">menu</span>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileNav" class="md:hidden" aria-label="Mobile" style="border-top:1px solid var(--line)">
+    <div class="wrap py-3 flex flex-col">
+      <a class="py-3 font-medium" href="#work">Work</a>
+      <a class="py-3 font-medium" href="#skills">Skills</a>
+      <a class="py-3 font-medium" href="#resume">Resume</a>
+      <a class="py-3 font-medium" href="#terminal">Terminal</a>
+      <a class="py-3 font-medium" href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top" class="relative z-10">
+
+<!-- ============================ HERO ============================ -->
+<section class="wrap" style="padding-bottom: clamp(3rem,6vw,5rem)" aria-label="Introduction">
+  <div class="grid items-start gap-y-10 lg:grid-cols-[1fr_auto_1fr] lg:gap-x-10 xl:gap-x-20">
+
+    <!-- Left role words -->
+    <div class="order-2 lg:order-1 grid grid-cols-2 lg:grid-cols-1 gap-y-6 lg:gap-y-0 lg:h-full lg:content-between lg:pt-[9vw] lg:pb-[6vw]">
+      <a href="#about" class="role-word rise" style="--i:2">Data<br/>Engineer</a>
+      <a href="#work" class="role-word rise lg:mt-24" style="--i:3">Data<br/>Analyst</a>
+    </div>
+
+    <!-- Center lanyard badge -->
+    <div class="order-1 lg:order-2 flex justify-center rise" style="--i:0">
+      <div class="lanyard" id="lanyard">
+        <div class="strap"></div>
+        <div class="clip"></div>
+        <div class="badge" id="badge">
+          <div class="badge-slot"></div>
+          <div class="photo photo-badge">
+            <img src="/photos/badge.jpg" alt="Portrait of Maryann Wambui" width="800" height="1000" fetchpriority="high" draggable="false"/>
+          </div>
+          <div class="mt-4 flex items-start justify-between gap-3">
+            <div>
+              <div class="font-extrabold text-xl leading-tight" style="font-family:'Plus Jakarta Sans',sans-serif">Maryann<br/>Wambui</div>
+              <div class="mono text-xs muted mt-2">Data Engineer</div>
+            </div>
+            <span class="chip" style="color:var(--accent)"><span class="w-1.5 h-1.5 rounded-full" style="background:#34d399"></span>Open to work</span>
+          </div>
+          <div class="barcode mt-4"></div>
+          <div class="mono text-[10px] muted mt-2 flex justify-between"><span>ID · MW-2026</span><span>NAIROBI, KE</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right role words -->
+    <div class="order-3 grid grid-cols-2 lg:grid-cols-1 gap-y-6 lg:gap-y-0 lg:h-full lg:content-between lg:text-right lg:pt-[9vw] lg:pb-[6vw]">
+      <a href="#work" class="role-word rise lg:hover:-translate-x-1" style="--i:2">Software<br/>Developer</a>
+      <a href="#contact" class="role-word rise lg:mt-24 lg:hover:-translate-x-1" style="--i:3">Python<br/>Developer</a>
+    </div>
+  </div>
+
+  <!-- Terminal pinch: typed whoami -->
+  <div class="mt-12 lg:-mt-4 flex flex-col items-center text-center gap-6">
+    <p class="mono text-sm sm:text-base rise" style="--i:4">
+      <span class="t-prompt" style="color:var(--accent)">maryann@portfolio:~$</span>
+      <span>whoami</span><br class="sm:hidden"/>
+      <span class="muted"> → </span><span id="typedRole" class="caret" style="color:var(--text)"></span>
+    </p>
+    <div class="flex flex-wrap justify-center gap-3 rise" style="--i:5">
+      <a href="#work" class="btn btn-primary">See my work <span class="material-symbols-outlined" style="font-size:18px">arrow_downward</span></a>
+      <a href="#terminal" class="btn btn-ghost"><span class="material-symbols-outlined" style="font-size:18px">terminal</span> Query my experience</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INTRO ============================ -->
+<section class="section" style="padding-top:0" aria-label="What I do">
+  <div class="wrap grid items-center gap-12 lg:grid-cols-2 lg:gap-24">
+    <div class="relative max-w-[560px] w-full mx-auto lg:mx-0" data-reveal>
+      <svg class="flow-art" viewBox="0 0 520 420" role="img" aria-label="Diagram of a data pipeline: source, ingest, transform, warehouse, dashboard">
+        <defs>
+          <linearGradient id="flowLine" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="var(--accent)" stop-opacity=".9"/>
+            <stop offset="1" stop-color="var(--accent)" stop-opacity=".15"/>
+          </linearGradient>
+        </defs>
+        <g class="flow-nodes" fill="none" stroke="url(#flowLine)" stroke-width="2">
+          <path d="M60 70 C 160 70, 140 150, 250 150 S 360 230, 460 230"/>
+          <path d="M460 230 C 360 300, 340 330, 220 330"/>
+          <path d="M60 70 L 60 330"/>
+        </g>
+        <g class="flow-dots">
+          <circle cx="60" cy="70" r="7"/><text x="80" y="66">source</text>
+          <circle cx="250" cy="150" r="7"/><text x="270" y="146">ingest</text>
+          <circle cx="460" cy="230" r="7"/><text x="405" y="212">transform</text>
+          <circle cx="220" cy="330" r="7"/><text x="238" y="326">warehouse</text>
+          <circle cx="60" cy="330" r="7"/><text x="10" y="356">dashboard</text>
+        </g>
+      </svg>
+      <div class="float-card" style="left:-6%;bottom:12%;animation-delay:-2s">
+        <div class="mono text-[11px] muted mb-2">daily toolkit</div>
+        <div class="flex gap-2 flex-wrap max-w-[190px]">
+          <span class="chip mono" style="padding:.25rem .6rem">Python</span>
+          <span class="chip mono" style="padding:.25rem .6rem">SQL</span>
+          <span class="chip mono" style="padding:.25rem .6rem">Azure</span><span class="chip mono" style="padding:.25rem .6rem">Snowflake</span>
+        </div>
+      </div>
+      <div class="float-card" style="right:-5%;top:10%">
+        <div class="mono text-[11px] muted mb-2">insight.live</div>
+        <div class="bars" aria-hidden="true">
+          <span style="--h:40%;--d:0s"></span><span style="--h:65%;--d:.3s"></span><span style="--h:50%;--d:.6s"></span><span style="--h:90%;--d:.9s"></span><span style="--h:70%;--d:1.2s"></span>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal style="--i:1">
+      <span class="eyebrow">What I do</span>
+      <h2 class="display mt-3 type-title" data-reveal-type>I turn messy data into things people <span style="color:var(--accent)">actually use.</span></h2>
+      <p class="muted mt-6 text-lg leading-relaxed max-w-xl">
+        I'm a Computer Science graduate who likes the whole journey: building pipelines that move data reliably, analysing it for patterns that matter, and shipping the software around it.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#about" class="btn btn-ghost">About me</a>
+        <a href="#terminal" class="btn btn-ghost mono" style="font-size:.82rem">$ run --query</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STATS + MARQUEE ============================ -->
+<section class="section" style="padding-block: clamp(2rem,5vw,4rem)" aria-label="At a glance">
+  <div class="wrap">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+      <div data-reveal style="--i:0"><div class="stat-num"><span data-count="2">0</span></div><div class="muted mt-3 text-sm">Industry placements<br/>Safaricom · ONA Kenya</div></div>
+      <div data-reveal style="--i:1"><div class="stat-num"><span data-count="12">0</span><span class="suffix">+</span></div><div class="muted mt-3 text-sm">Tools across data and software</div></div>
+      <div data-reveal style="--i:2"><div class="stat-num"><span data-count="3">0</span></div><div class="muted mt-3 text-sm">Projects shipped<br/>PlantCare AI, Football Predictor, COVID-19</div></div>
+      <div data-reveal style="--i:3"><div class="stat-num"><span data-count="2">0</span><span class="suffix">:1</span></div><div class="muted mt-3 text-sm">BSc Computer Science<br/>Moi University</div></div>
+    </div>
+  </div>
+  <div class="marquee mt-14" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack"><span class="marquee-item">Data engineering</span><span class="marquee-item">Python</span><span class="marquee-item">SQL</span><span class="marquee-item">PostgreSQL</span><span class="marquee-item">Snowflake</span><span class="marquee-item">Azure</span><span class="marquee-item">ETL pipelines</span><span class="marquee-item">Power BI</span><span class="marquee-item">Tableau</span><span class="marquee-item">PySpark</span><span class="marquee-item">Azure Databricks</span><span class="marquee-item">Prompt engineering</span><span class="marquee-item">Next.js</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WORK ============================ -->
+<section id="work" class="section" aria-label="Selected work">
+  <div class="wrap">
+    <div class="flex items-end justify-between gap-6 flex-wrap" data-reveal>
+      <div>
+        <span class="eyebrow">Projects</span>
+        <h2 class="display mt-3">Selected work</h2>
+      </div>
+      <div class="flex gap-3">
+        <button class="icon-btn" id="railPrev" type="button" aria-label="Previous project"><span class="material-symbols-outlined">arrow_back</span></button>
+        <button class="icon-btn" id="railNext" type="button" aria-label="Next project"><span class="material-symbols-outlined">arrow_forward</span></button>
+      </div>
+    </div>
+
+    <div class="rail mt-10" id="rail" data-reveal style="--i:1">
+      <article class="card work-card" data-tilt>
+        <div class="work-visual v-green"><span class="material-symbols-outlined" aria-hidden="true">eco</span></div>
+        <div class="p-6 sm:p-8">
+          <span class="chip mono">Personal project</span>
+          <h3 class="font-extrabold text-2xl mt-4" style="font-family:'Plus Jakarta Sans',sans-serif">PlantCare AI</h3>
+          <p class="muted mt-2 leading-relaxed">A TensorFlow Lite crop disease diagnostic that helps farmers spot problems early, even on low end phones.</p>
+          <a class="mt-6 inline-flex items-center gap-2 font-semibold" style="color:var(--accent)" data-cfg-href="github" href="#" target="_blank" rel="noopener noreferrer">View on GitHub <span class="material-symbols-outlined" style="font-size:18px">arrow_outward</span></a>
+        </div>
+      </article>
+
+      <article class="card work-card" data-tilt>
+        <div class="work-visual v-blue"><span class="material-symbols-outlined" aria-hidden="true">sports_soccer</span></div>
+        <div class="p-6 sm:p-8">
+          <span class="chip mono">Data engineering</span>
+          <h3 class="font-extrabold text-2xl mt-4" style="font-family:'Plus Jakarta Sans',sans-serif">Football Predictor</h3>
+          <p class="muted mt-2 leading-relaxed">An end to end pipeline: SQLAlchemy and Postgres storage, Elo ratings and an XGBoost model, served through a Next.js frontend.</p>
+          <a class="mt-6 inline-flex items-center gap-2 font-semibold" style="color:var(--accent)" data-cfg-href="github" href="#" target="_blank" rel="noopener noreferrer">View on GitHub <span class="material-symbols-outlined" style="font-size:18px">arrow_outward</span></a>
+        </div>
+      </article>
+
+      <article class="card work-card" data-tilt>
+        <div class="work-visual v-dark"><span class="material-symbols-outlined" aria-hidden="true">monitoring</span></div>
+        <div class="p-6 sm:p-8">
+          <span class="chip mono">Analytics</span>
+          <h3 class="font-extrabold text-2xl mt-4" style="font-family:'Plus Jakarta Sans',sans-serif">COVID-19 Analytics</h3>
+          <p class="muted mt-2 leading-relaxed">Used T-SQL window functions, multi table joins and CTEs to engineer a vaccination rate view with safe casting, ready for direct BI connections.</p>
+          <a class="mt-6 inline-flex items-center gap-2 font-semibold" style="color:var(--accent)" data-cfg-href="github" href="#" target="_blank" rel="noopener noreferrer">View on GitHub <span class="material-symbols-outlined" style="font-size:18px">arrow_outward</span></a>
+        </div>
+      </article>
+
+      <article class="card work-card" data-tilt>
+        <div class="work-visual v-blue"><span class="material-symbols-outlined" aria-hidden="true">insights</span></div>
+        <div class="p-6 sm:p-8">
+          <span class="chip mono">Business intelligence</span>
+          <h3 class="font-extrabold text-2xl mt-4" style="font-family:'Plus Jakarta Sans',sans-serif">Power BI Sales Dashboard</h3>
+          <p class="muted mt-2 leading-relaxed">An interactive Power BI dashboard comparing net sales, quantity and profit by product and city, with top and bottom five rankings and on demand filtering.</p>
+          <a class="mt-6 inline-flex items-center gap-2 font-semibold" style="color:var(--accent)" data-cfg-href="github" href="#" target="_blank" rel="noopener noreferrer">View project <span class="material-symbols-outlined" style="font-size:18px">arrow_outward</span></a>
+        </div>
+      </article>
+
+      <article class="card work-card" data-tilt>
+        <div class="work-visual v-green"><span class="material-symbols-outlined" aria-hidden="true">home_work</span></div>
+        <div class="p-6 sm:p-8">
+          <span class="chip mono">Analytics</span>
+          <h3 class="font-extrabold text-2xl mt-4" style="font-family:'Plus Jakarta Sans',sans-serif">Airbnb Market Price Analysis</h3>
+          <p class="muted mt-2 leading-relaxed">A Tableau EDA dashboard synthesising geolocation, pricing and seasonal booking data for comparing performance across locations.</p>
+          <a class="mt-6 inline-flex items-center gap-2 font-semibold" style="color:var(--accent)" data-cfg-href="github" href="#" target="_blank" rel="noopener noreferrer">View project <span class="material-symbols-outlined" style="font-size:18px">arrow_outward</span></a>
+        </div>
+      </article>
+    </div>
+    <div class="rail-progress mt-6" aria-hidden="true"><span id="railBar"></span></div>
+  </div>
+</section>
+
+<!-- ============================ SKILLS ============================ -->
+<section id="skills" class="section" aria-label="Skills">
+  <div class="wrap grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-20 items-start">
+    <div class="lg:sticky lg:top-32" data-reveal>
+      <svg class="stack-art" viewBox="0 0 440 460" role="img" aria-label="Stacked diagram of data engineering, analytics, software and AI layers">
+        <g class="stack-layer" style="--d:0s"><rect x="20" y="30" width="400" height="88" rx="20"/><text x="46" y="66">Data engineering</text><text x="46" y="90">PySpark &middot; Databricks &middot; ETL</text></g>
+        <g class="stack-layer" style="--d:.15s"><rect x="20" y="138" width="400" height="88" rx="20"/><text x="46" y="174">Analytics &amp; BI</text><text x="46" y="198">Power BI &middot; Tableau &middot; EDA</text></g>
+        <g class="stack-layer" style="--d:.3s"><rect x="20" y="246" width="400" height="88" rx="20"/><text x="46" y="282">Software development</text><text x="46" y="306">Python &middot; Next.js &middot; Git</text></g>
+        <g class="stack-layer" style="--d:.45s"><rect x="20" y="354" width="400" height="88" rx="20"/><text x="46" y="390">AI &amp; prompt engineering</text><text x="46" y="414">XGBoost &middot; LLM APIs &middot; Copilot</text></g>
+        <path class="stack-link" d="M220 118 L220 138 M220 226 L220 246 M220 334 L220 354"/>
+      </svg>
+      <h2 class="display mt-8 type-title" data-reveal-type>Data in. Decisions out.</h2>
+      <p class="muted mt-4 text-lg leading-relaxed max-w-md">I build the pipelines, model the data, and make the dashboards and software that people rely on.</p>
+    </div>
+    <div class="skill-list">
+      <article class="skill-row" data-reveal><span class="skill-ico material-symbols-outlined">database</span><div><h3>Data engineering</h3><p>PySpark, Azure Databricks, cloud data warehousing, ETL and ELT pipeline design, data modelling, PostgreSQL, MSSQL, T-SQL.</p></div></article>
+      <article class="skill-row" data-reveal style="--i:1"><span class="skill-ico material-symbols-outlined">bar_chart_4_bars</span><div><h3>Analytics and BI</h3><p>Power BI (DAX, Power Query), Tableau, Excel, EDA and statistical analysis, data cleaning, validation and reconciliation.</p></div></article>
+      <article class="skill-row" data-reveal style="--i:2"><span class="skill-ico material-symbols-outlined">code</span><div><h3>Software development</h3><p>Python, SQL, JavaScript, Next.js with TypeScript, Android with Jetpack Compose, Git and Linux.</p></div></article>
+      <article class="skill-row" data-reveal style="--i:3"><span class="skill-ico material-symbols-outlined">smart_toy</span><div><h3>AI and prompt engineering</h3><p>Prompt engineering and LLM APIs, AI assisted development with GitHub Copilot and Claude, predictive modelling with XGBoost and TensorFlow Lite.</p></div></article>
+      <div class="pipe" data-reveal aria-label="Typical data pipeline"><span>Source</span><i></i><span>Ingest</span><i></i><span>Transform</span><i></i><span>Warehouse</span><i></i><span>Dashboard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section id="about" class="section" aria-label="About me">
+  <div class="wrap grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
+    <div class="max-w-[560px] w-full mx-auto lg:mx-0 lg:order-2" data-reveal>
+      <div class="photo photo-about" style="box-shadow:var(--shadow)">
+        <img src="/photos/crop-wide.jpg" alt="Maryann Wambui" width="900" height="675" loading="lazy" data-parallax="0.05"/>
+      </div>
+    </div>
+    <div class="lg:order-1" data-reveal style="--i:1">
+      <span class="eyebrow">About me</span>
+      <h2 class="display mt-3 type-title" data-reveal-type>Curious by default, careful by habit.</h2>
+      <p class="muted mt-6 text-lg leading-relaxed max-w-xl">
+        I'm Maryann, a Nairobi-based Computer Science graduate. I like building software that's dependable, and being the person who calmly finds out why something isn't working.
+      </p>
+
+      <div class="tl mt-10">
+        <div class="tl-item">
+          <div class="mono text-xs muted">Oct 2025 to Mar 2026</div>
+          <div class="font-bold text-lg mt-1">Software Developer</div>
+          <div class="muted">Safaricom PLC</div>
+        </div>
+        <div class="tl-item">
+          <div class="mono text-xs muted">Mar to Oct 2023</div>
+          <div class="font-bold text-lg mt-1">Software Developer</div>
+          <div class="muted">ONA Kenya</div>
+        </div>
+        <div class="tl-item" style="padding-bottom:0">
+          <div class="mono text-xs muted">Sep 2021 to Dec 2025</div>
+          <div class="font-bold text-lg mt-1">BSc Computer Science</div>
+          <div class="muted">Moi University · Second Class Upper Honours</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ RESUME ============================ -->
+<section id="resume" class="section" aria-label="Resume">
+  <div class="wrap">
+    <div class="flex items-end justify-between gap-6 flex-wrap" data-reveal>
+      <h2 class="display">Resume</h2>
+      <a class="btn btn-primary" data-cfg-href="resume" href="/resume.pdf" download="Maryann-Wambui-CV.pdf"><span class="material-symbols-outlined" style="font-size:18px">download</span>Download PDF</a>
+    </div>
+    <div class="resume resume--wide mt-10" data-reveal style="--i:1">
+      <div>
+        <p class="muted text-lg leading-relaxed max-w-2xl">Data professional with a computer science foundation, blending data analysis, business intelligence and data engineering. Experienced in auditing and reconciling large scale relational data, building automated reporting and pipelines in Python and SQL, and creating interactive dashboards in Power BI and Tableau, with growing expertise in PySpark, Azure Databricks and cloud data warehousing.</p>
+        <div class="rz-grid mt-8">
+          <div><h3>Experience</h3><p><b>Software Developer</b><br/>Safaricom PLC</p><p><b>Software Developer</b><br/>ONA Kenya, Mar to Sep 2023</p><p><b>Android Trainer, Volunteer</b><br/>Google &amp; ACAT, Jan to Jun 2024</p></div>
+          <div><h3>Education &amp; certifications</h3><p><b>BSc Computer Science</b><br/>Moi University, Second Class Upper Honours</p><p>Google Data Analytics Certificate</p></div>
+          <div><h3>Core skills</h3><p>PySpark, Azure Databricks, SQL (T-SQL, PostgreSQL, MSSQL), Python, Power BI (DAX, Power Query), Tableau, Snowflake, Git.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TERMINAL ============================ -->
+<section id="terminal" class="section" aria-label="Interactive terminal">
+  <div class="wrap">
+    <div class="max-w-3xl" data-reveal>
+      <span class="eyebrow">Try it yourself</span>
+      <h2 class="display mt-3">Query my experience</h2>
+      <p class="muted mt-4 text-lg">A tiny working terminal. Type <span class="mono" style="color:var(--accent)">help</span>, or tap a shortcut.</p>
+    </div>
+
+    <div class="term mt-10" data-reveal style="--i:1">
+      <div class="term-head">
+        <span class="term-dot" style="background:#fb7185"></span><span class="term-dot" style="background:#fbbf24"></span><span class="term-dot" style="background:#34d399"></span>
+        <span class="mono text-xs ml-3 t-dim">maryann — portfolio</span>
+      </div>
+      <div class="px-5 pt-4 flex flex-wrap gap-2" id="termChips">
+        <button class="t-chip mono" type="button" data-cmd="help">help</button>
+        <button class="t-chip mono" type="button" data-cmd="select * from skills;">skills</button>
+        <button class="t-chip mono" type="button" data-cmd="select * from projects;">projects</button>
+        <button class="t-chip mono" type="button" data-cmd="select * from experience order by since desc;">experience</button>
+        <button class="t-chip mono" type="button" data-cmd="select * from education;">education</button>
+        <button class="t-chip mono" type="button" data-cmd="theme">theme</button>
+      </div>
+      <div class="term-body" id="termBody" aria-live="polite">
+        <div id="termOut"></div>
+        <label class="t-input-row">
+          <span class="t-prompt" aria-hidden="true">maryann@portfolio:~$</span>
+          <input id="termInput" class="t-input" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Terminal command input" placeholder="type a command…"/>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA ============================ -->
+<section id="contact" class="section" aria-label="Contact">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <span class="eyebrow">Let's talk</span>
+      <h2 class="display mt-3 max-w-4xl type-title" data-reveal-type>Got an idea?<br/>Let's build it.</h2>
+      <p class="muted mt-6 text-lg max-w-xl">I'm open to data engineering, data analyst and software roles, and to small data projects.</p>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a class="btn btn-primary" data-cfg-href="mailto" href="#">Email me <span class="material-symbols-outlined" style="font-size:18px">mail</span></a>
+        <a class="btn btn-ghost" data-cfg-href="whatsapp" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <button class="btn btn-ghost" id="copyEmail" type="button"><span class="material-symbols-outlined" style="font-size:18px">content_copy</span><span id="copyLabel">Copy email</span></button>
+        <a class="btn btn-ghost" data-cfg-href="linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn-ghost" data-cfg-href="github" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn btn-ghost" data-cfg-href="resume" href="/resume.pdf" download="Maryann-Wambui-CV.pdf"><span class="material-symbols-outlined" style="font-size:18px">download</span>CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="relative z-10" style="border-top:1px solid var(--line)">
+  <div class="wrap py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm muted">
+    <span>© <span id="year">2026</span> Maryann Wambui</span>
+    <span class="mono">Built with data &amp; curiosity ✦ Nairobi</span>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
